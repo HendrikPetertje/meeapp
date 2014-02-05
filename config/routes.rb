@@ -9,6 +9,7 @@ Meeapp::Application.routes.draw do
   get '/voorwaarden', to: 'pages#voorwaarden'
   get '/gemeente', to: 'pages#gemeente'
   get '/professionals', to: 'pages#professionals'
+  get '/professionals/opweg', to: 'pages#opweg'
   resources :pages, only: [:index, :edit, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
