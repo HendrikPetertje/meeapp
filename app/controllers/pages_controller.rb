@@ -51,7 +51,7 @@ class PagesController < ApplicationController
   end
 
   # proffesionals page /proffesionals
-  def proffesionals
+  def professionals
   end
 
   private
