@@ -11,6 +11,7 @@ Meeapp::Application.routes.draw do
   get '/professionals', to: 'pages#professionals'
   get '/professionals/opweg', to: 'pages#opweg'
   get '/professionals/mijnwerknemer', to: 'pages#mijnwerknemer'
+  get '/client', to: 'pages#client'
   resources :pages, only: [:index, :edit, :update]
 
   scope '/professionals' do
