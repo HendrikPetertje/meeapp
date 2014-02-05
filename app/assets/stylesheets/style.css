@@ -1,3 +1,11 @@
+h1 {
+	font-family: "Exo 2", sans-serif;
+	font-size: 18pt;
+	margin-bottom: 10px;	
+}
+p {
+	margin-bottom: 10px;
+}
 .top_bar, .client_bar, .business_bar, .city_bar {
 	position: absolute;
 	color: white;
@@ -93,3 +101,85 @@ strong {
 	background: url('/assets/cityhall.jpg') no-repeat;
 	background-size: cover;
 }
+
+.gemeente_menu {
+	background-color: #95C11E;
+}
+.menu {
+	float: left;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	color: white;
+	font-family: "Exo 2", sans-serif;
+}
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+.menu a:hover {
+	text-decoration: underline;
+}
+.menu_logo {
+	height: 30px;
+	width: 100px;
+	background: url('/assets/logo.png') no-repeat;
+	background-size: contain;
+	margin: 10px 0 0 10px;
+	float: left;
+}
+.menu_links {
+	float: right;
+	margin: 15px 20px 0 0;
+}
+
+.content {
+	width: 95%;
+	float: left;
+	padding: 10px;
+	font-family: "Open Sans", sans-serif;
+}
+.gemeente {
+	color: #95C11E;
+}
+.info {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.documentation {
+	width: 50%;
+	float: left;
+	margin-bottom: 10px;
+}
+.documentation a {
+	color: black;
+}
+.documentation a:hover {
+	color: #95C11E;
+	text-decoration: underline;
+}
+.referentie {
+	width: 50%;
+	float: left;
+}
+.adress {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
