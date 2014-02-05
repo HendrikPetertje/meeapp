@@ -1,0 +1,95 @@
+.top_bar, .client_bar, .business_bar, .city_bar {
+	position: absolute;
+	color: white;
+	width: 100%;
+	height: 25%;
+	right: 0;
+	text-align: center;
+	float: left;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	z-index: 0;
+	transition: width 0.5s ease;
+}
+.client_bar:hover, .client_image:hover ~ .client_bar {
+	width: 75%;
+}
+.business_bar:hover, .business_image:hover ~ .business_bar {
+	width: 75%;
+}
+.city_bar:hover, .city_image:hover ~ .city_bar {
+	width: 75%;
+}
+.top_bar {
+	background-color: #EF8016;
+	top: 0;
+}
+.logo {
+	position: relative;
+	width: 25%;
+	height: 70%;
+	left: 20px;
+	top: 20px;
+	background: url('/assets/logo.png') no-repeat;
+	background-size: contain;
+	float: left;
+}
+.top_bar_text {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	width: 65%;
+	left: 30%;
+	text-align: justify;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12pt;
+}
+strong {
+	font-weight: bold;
+}
+.client_bar {
+	background-color: #684494;
+	top: 25%;
+}
+.business_bar {
+	background-color: #95C11E;
+	top: 50%;
+}
+.city_bar {
+	background-color: #66AABF;
+	top: 75%;
+}
+.vertical_center {
+	position: absolute;
+	margin: auto;
+	top: -20px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	height: 10%;
+}
+.client_image, .business_image, .city_image {
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	left: 0;
+	z-index: -10;
+}
+.client_image {
+	top: 25%;
+	background: url('/assets/client.png') no-repeat;
+	background-size: cover;
+}
+.business_image {
+	top: 50%;
+	background: url('/assets/business.jpg') no-repeat;
+	background-size: cover;
+}
+.city_image {
+	top: 75%;
+	background: url('/assets/cityhall.jpg') no-repeat;
+	background-size: cover;
+}
