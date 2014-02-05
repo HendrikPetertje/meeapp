@@ -1,4 +1,4 @@
-De MeeApp!	{#welcome}
+De MeeApp!
 =====================
 # De App 
 ### Wie heeft dit gemaakt en wat is dit?
