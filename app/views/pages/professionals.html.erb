@@ -1,1 +1,29 @@
-<h1>Gemeenten omdat aardbij</h1>
+<div class="professionals_menu menu">
+	<%= link_to root_path do %>
+		<div class="menu_logo"></div>
+	<% end %>
+	<div class="menu_links">
+		<%= link_to "Bedrijf", professionals_path %>
+		<%= link_to "Mijn werknemers", mijnwerknemers_path %>
+		<%= link_to "Samen op weg", professionals_opweg_path %>
+		<%= link_to "Contact", contact_path %>
+	</div>
+</div>
+<div class="content">
+	<div class="info">
+		<h1 class="professionals">Wat kan MEE voor ú als professional betekenen?</h1>
+		<p>MEE is er niet alleen voor cliënten, maar ook voor professionals in de zorg en het onderwijs, bij gemeenten en justitie. Bent u werkzaam binnen één van deze beroepsgroepen? Dan treft u ongetwijfeld regelmatig mensen die leven met een
+		verstandelijke en/of lichamelijke beperking. Mensen die ook willen meedoen in de samenleving. Mensen die de behoefte voelen om hun levenskwaliteit te vergroten.
+		Soms hebben zij vragen die verder gaan dan de oplossingen die u kunt bieden of die meer tijd in beslag nemen dan u beschikbaar hebt. Op dat moment hoeft u uw patiënt/cliënt geen nee te verkopen, maar kunt u doorverwijzen naar MEE.</p>
+
+		<p>MEE is er speciaal voor mensen die door hun beperking problemen ervaren in het dagelijkse leven. MEE heeft veel expertise wat betreft het omgaan met beperkingen. MEE is er voor jong en oud, voor direct betrokkenen, maar ook voor ouders of verzorgers. MEE komt bij cliënten thuis en heeft tijd voor persoonlijke cliëntondersteuning op alle terreinen van het leven.</p>
+
+		<p>Heeft u een specifieke vraag? Neem dan contact met ons op via de <%= link_to "contact pagina", contact_path, :class => "professionals_link" %><br></p>
+	</div>
+	<div class="professionals_buttons">
+		<h1 class="professionals">Kijk verder op onstaande pagina's</h1>
+		<%= link_to "Mijn werknemers", mijnwerknemers_path %>
+		<%= link_to "Samen op weg", professionals_opweg_path %>
+		<%= link_to "Contact", contact_path %>
+	</div>
+</div>

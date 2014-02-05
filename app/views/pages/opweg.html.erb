@@ -1,14 +1,31 @@
-<h1>Samen Op Weg pagina</h1>
-Op deze pagina kun je gewoon een simpel formulier neerzetten dat nergens naar toe gaat of zo.
-
-<form>
-	<label for="name">Naam</label><br>
-	<input type="text"><br>
-	<br>
-	<label for="E-mail">E-mail adres</label><br>
-	<input type="text"><br>
-	<br>
-
-	<label for="Bericht">Bericht</label><br>
-	<input type="textarea"><br>
-</form>
+<div class="professionals_menu menu">
+	<%= link_to root_path do %>
+		<div class="menu_logo"></div>
+	<% end %>
+	<div class="menu_links">
+		<%= link_to "Bedrijf", professionals_path %>
+		<%= link_to "Mijn werknemers", mijnwerknemers_path %>
+		<%= link_to "Samen op weg", professionals_opweg_path %>
+		<%= link_to "Contact", contact_path %>
+	</div>
+</div>
+<div class="content">
+	<div class="info">
+		<h1 class="professionals">Samen op weg pagina</h1>
+		<p>U wilt een cliënt aanmelden bij MEE Drenthe. Hiervoor kunt u onderstaand verwijzingsformulier gebruiken.</p>
+		<p>Wanneer er extra informatie over de cliënt beschikbaar is, is het van belang om dit mee te sturen met het verwijzingsformulier. Bijvoorbeeld medische informatie, een psychologisch onderzoek of een diagnose. Hoe vollediger de verwijzing hoe sneller het proces van aanmelding kan verlopen.</p>
+		<p>Mocht u ervoor kiezen om onderstaand verwijzingsformulier te gebruiken, dan maken wij u erop attent dat u als verwijzende organisatie verantwoordelijk bent voor het verzenden van privacygevoelige gegevens.</p>
+		<p>Wanneer wij de aanmelding hebben ontvangen, streven wij ernaar om binnen een week contact met u en/of de cliënt op te nemen om een afspraak te maken voor een aanmeld/informatief gesprek. Mochten wij over uw verwijzing nog vragen hebben, dan nemen we contact op zodra we deze hebben ontvangen.</p>
+		<p>Wanneer er naar aanleiding van uw verwijzing een aanmeld/informatief gesprek wordt gepland waarbij u niet aanwezig bent, krijgt u nadien een terugkoppeling.</p>
+		<h1 class="professionals">Meld u nu aan!</h1>
+		<form>
+			<label for="name">Naam</label><br>
+			<input type="text" id="name" placeholder="Naam"><br>
+			<label for="E-mail">E-mail adres</label><br>
+			<input type="text" id="E-mail" placeholder="E-mail adres"><br>
+			<label for="Bericht">Bericht</label><br>
+			<textarea id="Bericht" placeholder="Bericht"></textarea><br>
+			<button type="button" class="opweg_button">Verzenden</button>
+		</form>
+	</div>
+</div>
