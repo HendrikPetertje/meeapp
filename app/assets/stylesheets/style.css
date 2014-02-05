@@ -6,6 +6,24 @@ h1 {
 p {
 	margin-bottom: 10px;
 }
+a {
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+.city_link:hover {
+	color: #66AABF;
+}
+.professionals_link:hover {
+	color: #95C11E;
+}
+.client_link:hover {
+	color: #684494;
+}
+.rest_link:hover {
+	color: #EF8016
+}
 .top_bar, .client_bar, .business_bar, .city_bar {
 	position: absolute;
 	color: white;
@@ -102,8 +120,17 @@ strong {
 	background-size: cover;
 }
 
+.client_menu {
+	background-color: #684494;
+}
 .gemeente_menu {
+	background-color: #66AABF;
+}
+.professionals_menu {
 	background-color: #95C11E;
+}
+.rest_menu {
+	background-color: #EF8016;
 }
 .menu {
 	float: left;
@@ -117,6 +144,7 @@ strong {
 .menu a {
 	color: white;
 	text-decoration: none;
+	margin-right: 20px;
 }
 .menu a:hover {
 	text-decoration: underline;
@@ -131,7 +159,7 @@ strong {
 }
 .menu_links {
 	float: right;
-	margin: 15px 20px 0 0;
+	margin: 15px 0 0;
 }
 
 .content {
@@ -141,7 +169,16 @@ strong {
 	font-family: "Open Sans", sans-serif;
 }
 .gemeente {
-	color: #95C11E;
+	color: #66AABF;
+}
+.professionals {
+	color: #95C11E
+}
+.client {
+	color: #684494;
+}
+.rest {
+	color: #EF8016;
 }
 .info {
 	width: 100%;
@@ -152,13 +189,6 @@ strong {
 	float: left;
 	margin-bottom: 10px;
 }
-.documentation a {
-	color: black;
-}
-.documentation a:hover {
-	color: #95C11E;
-	text-decoration: underline;
-}
 .referentie {
 	width: 50%;
 	float: left;
@@ -167,9 +197,82 @@ strong {
 	margin-bottom: 10px;
 }
 
-
-
-
+.professionals_buttons {
+	float: left;
+	width: 100%;
+}
+.professionals_buttons a {
+	display: inline-block;
+	height: 50px;
+	width: 30%;
+	background-color: #95C11E;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 30px;
+}
+.professionals_buttons a:hover {
+	background-color: #7CA805;
+}
+form label {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: "Open Sans", sans-serif;
+	margin-bottom: 5px;
+}
+form input[type="text"] {
+	width: 300px;
+	border: solid 1px black;
+	outline: none;
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 10pt;
+}
+form textarea {
+	width: 300px;
+	border: solid 1px black;
+	outline: none;
+	height: 100px;
+	line-height: 30px;
+	margin-bottom: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 10pt;
+}
+form input:focus, form textarea:focus {
+	border: solid 1px #95C11E;
+}
+.opweg_button {
+	height: 30px;
+	width: 150px;
+	border: none;
+	background-color: #95C11E;
+	border-radius: 5px;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-size: 10pt;
+	outline: none;
+}
+.rest_button {
+	height: 30px;
+	width: 150px;
+	border: none;
+	background-color: #EF8016;
+	border-radius: 5px;
+	color: white;
+	font-family: "Open Sans", sans-serif;
+	font-size: 10pt;
+	outline: none;	
+}
+.rest_form input:focus, form textarea:focus {
+	border: solid 1px #EF8016;
+}
+ul {
+	margin-bottom: 10px;
+}
 
 
 

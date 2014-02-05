@@ -1,6 +1,9 @@
 <div class="gemeente_menu menu">
-	<div class="menu_logo"></div>
+	<%= link_to root_path do %>
+		<div class="menu_logo"></div>
+	<% end %>
 	<div class="menu_links">
+		<%= link_to "Gemeente", gemeente_path %>
 		<%= link_to "Contact", contact_path %>
 	</div>
 </div>
@@ -12,13 +15,13 @@
 	</div>
 	<div class="documentation">
 		<h1 class="gemeente">Documentatie</h1>
-		<p>Hieronder vind u verschillende documenten die u meer informatie geven over wat wij doen en de grote van het probleem. Indien er nog vragen zijn kunt u contact opnemen via onze <%= link_to "contact pagina", contact_path %></p>
+		<p>Hieronder vind u verschillende documenten die u meer informatie geven over wat wij doen en de grote van het probleem. Indien er nog vragen zijn kunt u contact opnemen via onze <%= link_to "contact pagina", contact_path, :class => "city_link" %></p>
 		<ul>
-			<li><%= link_to "Folder voor gemeenten", "/extra/folder voor gemeenten.pdf", :target => "_blank" %></li>
-			<li><%= link_to "Maatschappelijke Business Case: MEE als publieke waarde", "/extra/mbc_lr.pdf", :target => "_blank" %></li>
-			<li><%= link_to "Handreiking Wet werken naar vermogen", "/extra/mee-handreiking-wwnv.pdf", :target => "_blank" %></li>
-			<li><%= link_to "Kerncijfers in Drenthe", "/extra/mee_kerncijfers.pdf", :target => "_blank" %></li>
-			<li><%= link_to "Brochure 'Zag je het maar'", "/extra/zag-je-het-maar.pdf", :target => "_blank" %></li>
+			<li><%= link_to "Folder voor gemeenten", "/extra/folder voor gemeenten.pdf", :target => "_blank", :class => "city_link" %></li>
+			<li><%= link_to "Maatschappelijke Business Case: MEE als publieke waarde", "/extra/mbc_lr.pdf", :target => "_blank", :class => "city_link" %></li>
+			<li><%= link_to "Handreiking Wet werken naar vermogen", "/extra/mee-handreiking-wwnv.pdf", :target => "_blank", :class => "city_link" %></li>
+			<li><%= link_to "Kerncijfers in Drenthe", "/extra/mee_kerncijfers.pdf", :target => "_blank", :class => "city_link" %></li>
+			<li><%= link_to "Brochure 'Zag je het maar'", "/extra/zag-je-het-maar.pdf", :target => "_blank", :class => "city_link" %></li>
 		</ul>
 	</div>
 	<div class="referentie">
