@@ -32,6 +32,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+	gem 'pg'
+end
+
 gem 'ckeditor'
 gem 'carrierwave'
 gem 'mini_magick'
