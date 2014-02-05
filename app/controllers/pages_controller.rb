@@ -46,6 +46,14 @@ class PagesController < ApplicationController
     @page = Page.find_by_title('Voorwaarden')
   end
 
+  # Gemeenten page /gemeenten
+  def gemeenten
+  end
+
+  # proffesionals page /proffesionals
+  def proffesionals
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
