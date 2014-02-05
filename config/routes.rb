@@ -1,6 +1,12 @@
 Meeapp::Application.routes.draw do
+
   mount Ckeditor::Engine => '/ckeditor'
+
   root 'pages#home'
+
+  get '/contact', to: 'pages#contact'
+  get '/faq', to: 'pages#faq'
+  get '/voorwaarden', to: 'pages#voorwaarden'
   resources :pages, only: [:index, :edit, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.

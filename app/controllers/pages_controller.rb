@@ -25,9 +25,25 @@ class PagesController < ApplicationController
     end
   end
 
+  # Custom pages for home contact and such
   # Home page /pages/home or /
   def home
     @page = Page.find_by_title('Home')
+  end
+
+  # Contact page /contact
+  def contact
+    @page = Page.find_by_title('Contact')
+  end
+
+  # Contact page /faq
+  def faq
+    @page = Page.find_by_title('FAQ')
+  end
+
+  # Contact page /Voorwaarden
+  def voorwaarden
+    @page = Page.find_by_title('Voorwaarden')
   end
 
   private
