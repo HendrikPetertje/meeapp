@@ -12,15 +12,19 @@
 		Cliënt
 	</div>
 </div>
-<div class="business_image"></div>
-<div class="business_bar">
-	<div class="vertical_center">
-		Bedrijf
+<%= link_to professionals_path do %>
+	<div class="business_image"></div>
+	<div class="business_bar">
+		<div class="vertical_center">
+			Bedrijf
+		</div>
 	</div>
-</div>
-<div class="city_image"></div>
-<div class="city_bar">
-	<div class="vertical_center">
-		Gemeente
+<% end %>
+<%= link_to gemeenten_path do %>
+	<div class="city_image"></div>
+	<div class="city_bar">
+		<div class="vertical_center">
+			Gemeente
+		</div>
 	</div>
-</div>
+<% end %>
