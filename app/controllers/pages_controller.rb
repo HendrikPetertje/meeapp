@@ -46,12 +46,16 @@ class PagesController < ApplicationController
     @page = Page.find_by_title('Voorwaarden')
   end
 
-  # Gemeenten page /gemeenten
-  def gemeenten
+  # Gemeente page /gemeenten
+  def gemeente
   end
 
   # proffesionals page /proffesionals
   def professionals
+  end
+
+  # Samen opweg page /professionals/opweg
+  def opweg
   end
 
   private

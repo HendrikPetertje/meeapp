@@ -7,7 +7,7 @@ Meeapp::Application.routes.draw do
   get '/contact', to: 'pages#contact'
   get '/faq', to: 'pages#faq'
   get '/voorwaarden', to: 'pages#voorwaarden'
-  get '/gemeenten', to: 'pages#gemeenten'
+  get '/gemeente', to: 'pages#gemeenten'
   get '/professionals', to: 'pages#professionals'
   resources :pages, only: [:index, :edit, :update]
 
