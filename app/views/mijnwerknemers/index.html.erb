@@ -1,0 +1,29 @@
+<h1>Listing mijnwerknemers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Aandoening</th>
+      <th>Advies</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mijnwerknemers.each do |mijnwerknemer| %>
+      <tr>
+        <td><%= mijnwerknemer.aandoening %></td>
+        <td><%= mijnwerknemer.advies %></td>
+        <td><%= link_to 'Show', mijnwerknemer %></td>
+        <td><%= link_to 'Edit', edit_mijnwerknemer_path(mijnwerknemer) %></td>
+        <td><%= link_to 'Destroy', mijnwerknemer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mijnwerknemer', new_mijnwerknemer_path %>
