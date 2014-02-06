@@ -13,32 +13,19 @@
   <div class="info">
     <h1 class="professionals">Mijn werknemers</h1>
     <p>
-      <!-- Dump hier die shit maar neer! -->
+      <% @mijnwerknemers.each do |mijnwerknemer| %>
+  <%= link_to mijnwerknemer.aandoening, mijnwerknemer %><br>
+<% end %>
     </p>
+    <br>
+<b>voor admins</b><br>
+<%= link_to 'Nieuwe aandoening documenteren', new_mijnwerknemer_path %>
   </div>
 </div>
 
-<!-- Jou shit! Linkjes weglaten svp! -->
-<table>
-  <thead>
-    <tr>
-      <th>Aandoening</th>
-      <th>Advies</th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @mijnwerknemers.each do |mijnwerknemer| %>
-      <tr>
-        <td><%= mijnwerknemer.aandoening %></td>
-        <td><%= mijnwerknemer.advies %></td>
-        <td><%= link_to 'Bekijk', mijnwerknemer %></td>
-      </tr>
-    <% end %>
-  </tbody>
+
+
 </table>
 
-<br>
-<b>voor admins</b><br>
-<%= link_to 'Nieuwe aandoening documenteren', new_mijnwerknemer_path %>
+
