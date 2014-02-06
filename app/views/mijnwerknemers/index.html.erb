@@ -25,8 +25,6 @@
       <th>Aandoening</th>
       <th>Advies</th>
       <th></th>
-      <th></th>
-      <th></th>
     </tr>
   </thead>
 
@@ -35,14 +33,12 @@
       <tr>
         <td><%= mijnwerknemer.aandoening %></td>
         <td><%= mijnwerknemer.advies %></td>
-        <td><%= link_to 'Show', mijnwerknemer %></td>
-        <td><%= link_to 'Edit', edit_mijnwerknemer_path(mijnwerknemer) %></td>
-        <td><%= link_to 'Destroy', mijnwerknemer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Bekijk', mijnwerknemer %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Mijnwerknemer', new_mijnwerknemer_path %>
+<b>voor admins</b><br>
+<%= link_to 'Nieuwe aandoening documenteren', new_mijnwerknemer_path %>
